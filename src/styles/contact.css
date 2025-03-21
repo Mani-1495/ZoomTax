@@ -1,0 +1,152 @@
+.contact-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .contact-bg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .contact-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+    
+  }
+  
+  .contact-left {
+    width: 45%;
+    gap: 100px;
+  }
+  
+  .contact-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #023c6c;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  .contact-subheading {
+    font-size: 26px;
+    font-weight: bold;
+    color: #023c6c;
+  }
+  
+  .contact-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .question-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #8bbb80;
+    margin-bottom: 10px;
+  }
+  
+  .write-line {
+    font-size: 32px;
+    font-weight: bold;
+    color: #023c6c;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s;
+    border-color: bisque;
+  }
+  
+  .input-field:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .message-box {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+  }
+  
+  .submit-button {
+    padding: 12px;
+    background-color: #8bbb80;
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .submit-button:hover {
+    background-color: #6fa765;
+    transform: scale(1.1);
+  }
+  
