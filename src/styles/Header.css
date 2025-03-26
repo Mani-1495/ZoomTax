@@ -25,7 +25,7 @@
     font-family: Arial, sans-serif;
   }
   
-  .callback-btn {
+  .callback-btn1 {
     margin-top: 20px;
     padding: 15px 25px;
     font-size: 18px;
@@ -161,20 +161,21 @@
   }
   
   .service-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 25px;
-    width: 30%;
-    min-width: 280px;
-    text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fdfdfd;
+    border: 1px solid #8000ff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 30%;
+  min-width: 280px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
   }
   
   .service-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   }
   
   .service-card h2 {
@@ -183,8 +184,30 @@
     color: #023c6c;
     font-weight: bold;
     margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+ 
+
+  .service-card h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #023c6c;
+    transition: width 0.3s ease, left 0.3s ease;
   }
   
+  .service-card:hover h2::after {
+    width: 100%;
+    left: 0;
+  }
+
+
   .service-card ul {
     list-style: none;
     padding: 0;
@@ -203,5 +226,146 @@
     content: "✔";
     font-size: 1.5rem;
     color: #023c6c;
+  }
+  
+
+  .callback-btnn {
+    margin-top: 10px;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #2d89ef, #57b1f0);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(45, 137, 239, 0.4);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .callback-btnn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-20deg);
+    transition: left 0.5s;
+  }
+  
+  .callback-btnn:hover::before {
+    left: 130%;
+  }
+  
+  .callback-btnn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(45, 137, 239, 0.5);
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .slideshowm {
+      height: 300px;
+    }
+  
+    .slideshow-imgm {
+      height: 300px;
+    }
+  
+    .slideshowm-text {
+      font-size: 18px;
+      top: 55%;
+    }
+  
+    .callback-btn {
+      font-size: 14px;
+      padding: 10px 18px;
+      margin-top: 15px;
+    }
+  
+    .chartered-section {
+      padding: 30px 15px;
+    }
+  
+    .chartered-section h1 {
+      font-size: 1.6rem;
+    }
+  
+    .chartered-section p {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  
+    .value-section {
+      flex-direction: column;
+      padding: 30px 15px;
+      gap: 30px;
+    }
+  
+    .value-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .value-text h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .value-text li {
+      font-size: 1rem;
+    }
+  
+    .services-section {
+      padding: 30px 15px;
+    }
+  
+    .services-title {
+      font-size: 2rem;
+    }
+  
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .service-card {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .service-card h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      word-wrap: break-word;
+    }
+  
+    .service-card li {
+      font-size: 1rem;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .service-card {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .service-card h2 {
+      font-size: 1.3rem;
+      text-align: center;
+      word-wrap: break-word;
+    }
+  
+    .service-card li {
+      font-size: 0.95rem;
+    }
   }
   

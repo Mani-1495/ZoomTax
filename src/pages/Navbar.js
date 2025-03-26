@@ -1,15 +1,21 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 
-const Navbar = ({ setShowAppointment }) => { // Accept setShowAppointment as a prop
+const Navbar = ({ setShowAppointment }) => {
   const navigate = useNavigate();
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+
+  const handleNavClick = (path) => {
+    navigate(path);
+    setIsSideNavOpen(false);
+  };
 
   return (
     <nav>
-      {/* Header Section */}
       <div className="header">
         <img src="/images/ZoomTax.jpg" alt="Logo" className="logo" />
+        
         <div className="info">
           <div className="contact-item">
             <img src="/images/mail_logo.png" alt="Mail" />
@@ -33,22 +39,40 @@ const Navbar = ({ setShowAppointment }) => { // Accept setShowAppointment as a p
             </div>
           </div>
         </div>
-        
-        
-        <button className="callback-btn" onClick={() => setShowAppointment(true)}>  
-          Book an <br /> Appointment 
+
+        <button className="callback-btn" onClick={() => setShowAppointment(true)}>
+          Book an <br /> Appointment
         </button>
+
+        <div className="hamburger" onClick={() => setIsSideNavOpen(true)}>
+          &#9776;
+        </div>
       </div>
 
-      {/* Navbar Section */}
       <div className="navbar-section">
-        <button className="nav-button" onClick={() => navigate("/")}>Home</button>
-        <button className="nav-button" onClick={() => navigate('/about')}> About Us </button>
-        <button className="nav-button" onClick={() => navigate('/bsr')}> Business Registration Services </button>
-        <button className="nav-button" onClick={() => navigate("/cls")}>Compliance & Legal Service</button>
-        <button className="nav-button" onClick={() => navigate("/cfo")}>Outsourcing & CFO Services</button>
-        <button className="nav-button" onClick={() => navigate("/contact")}>Contact Us</button>
-      </div>
+  <p className="nav-text" onClick={() => navigate("/")}>Home</p>
+  <p className="nav-text" onClick={() => navigate("/about")}>About Us</p>
+  <p className="nav-text" onClick={() => navigate("/bsr")}>Business Registration Services</p>
+  <p className="nav-text" onClick={() => navigate("/cls")}>Compliance & Legal Service</p>
+  <p className="nav-text" onClick={() => navigate("/cfo")}>Outsourcing & CFO Services</p>
+  <p className="nav-text" onClick={() => navigate("/contact")}>Contact Us</p>
+</div>
+
+
+      {isSideNavOpen && (
+        <div className="side-navbar">
+          <div className="side-nav-content">
+            <span className="close-btn" onClick={() => setIsSideNavOpen(false)}>&times;</span>
+            <img src="/images/ZoomTax.jpg" alt="Logo" className="side-logo" />
+            <p onClick={() => handleNavClick("/")}>Home</p>
+            <p onClick={() => handleNavClick("/about")}>About Us</p>
+            <p onClick={() => handleNavClick("/bsr")}>Business Registration Services</p>
+            <p onClick={() => handleNavClick("/cls")}>Compliance & Legal Service</p>
+            <p onClick={() => handleNavClick("/cfo")}>Outsourcing & CFO Services</p>
+            <p onClick={() => handleNavClick("/contact")}>Contact Us</p>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/About.css";
 import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
+import WhatsApp from "../pages/whatsapp";
 
 const About = ({ setShowAppointment }) => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const About = ({ setShowAppointment }) => {
       </div>
 
       <div className="about-content">
-        <h2 className="firm-name">Manikanta Teja & Associates</h2>
+        <h2 className="firm-name">Zoom Taxes</h2>
         <h3 className="firm-tagline">
           A Chartered Accountant Firm in Thagarapuvalasa
         </h3>
@@ -37,12 +38,11 @@ const About = ({ setShowAppointment }) => {
           <h2>We Can Help You..</h2>
           <p className="query-email">ChvApps7@gmail.com</p>
         </div>
-        {/* Fixed: Using setShowAppointment from props */}
-        <button className="callback-btn" onClick={() => setShowAppointment(true)}> 
+        <button className="callback-btnn" onClick={() => setShowAppointment(true)}> 
           Request a call back 
         </button>
       </div>
-
+      <WhatsApp />
       <Footer />
     </div>
   );

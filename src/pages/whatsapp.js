@@ -20,8 +20,8 @@ const WhatsApp = () => {
             </div>
           </div>
           <div className="popup-body">
-            <a href="https://wa.me/918179197108" className="whatsapp-link">
-              +91 8179197108
+            <a href="https://wa.me/917093698955" className="whatsapp-link">
+              +91 7093698955
             </a>
           </div>
         </div>

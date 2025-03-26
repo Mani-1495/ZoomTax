@@ -31,7 +31,7 @@ const AppointmentCard = ({ onClose }) => {
           <textarea name="message" placeholder="Your Message (Optional)" value={formData.message} onChange={handleChange} />
           <button type="submit">Submit</button>
         </form>
-        <button className="close-btn" onClick={onClose}>
+        <button className="close-btn1" onClick={onClose}>
           ✖ Close
         </button>
       </div>

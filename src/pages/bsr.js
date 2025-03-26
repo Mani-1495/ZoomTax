@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../styles/bsr.css";
+import WhatsApp from "../pages/whatsapp";
 
 const BSR = () => {
   const slides1 = ["/images/slide1.avif", "/images/slide2.avif", "/images/slide3.avif"];
@@ -84,6 +85,7 @@ const BSR = () => {
         </div>
       </div>
 
+      <WhatsApp />
       <Footer />
     </>
   );

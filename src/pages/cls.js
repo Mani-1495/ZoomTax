@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../styles/cls.css";
-
+import WhatsApp from "../pages/whatsapp";
 const CLS = () => {
   return (
     <div>
@@ -79,7 +79,7 @@ const CLS = () => {
           </ul>
         </div>
       </div>
-
+      <WhatsApp />
       <Footer />
     </div>
   );

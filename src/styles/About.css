@@ -103,4 +103,90 @@
     box-shadow: inset 5px 5px 10px #c5c5c5, inset -5px -5px 10px #ffffff;
     transform: scale(1.05);
   }
+
+
+  .callback-btnn {
+    margin-top: 10px;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #2d89ef, #57b1f0);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(45, 137, 239, 0.4);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .callback-btnn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-20deg);
+    transition: left 0.5s;
+  }
+  
+  .callback-btnn:hover::before {
+    left: 130%;
+  }
+  
+  .callback-btnn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(45, 137, 239, 0.5);
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 30px;
+    }
+  
+    .about-image {
+      height: 250px;
+    }
+  
+    .about-content {
+      margin-top: 50px;
+      padding: 30px 15px;
+    }
+  
+    .firm-name {
+      font-size: 26px;
+    }
+  
+    .firm-tagline {
+      font-size: 20px;
+    }
+  
+    .firm-description {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  
+    .query-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 25px 20px;
+    }
+  
+    .query-text h2,
+    .query-email {
+      padding: 0;
+    }
+  
+    .callback-btnn {
+      margin-top: 20px;
+      margin-right: 0;
+      align-self: center;
+    }
+  }
+  
   

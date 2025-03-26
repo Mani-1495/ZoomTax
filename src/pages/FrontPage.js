@@ -19,14 +19,14 @@ const FrontPage = () => {
         <img src="/images/main1.jpg" alt="Main" className="slideshow-imgm" />
         <div className="slideshowm-text">
           <h1>Looking to start a <br /> Business?</h1>
-          <button className="callback-btn" onClick={() => setShowAppointment(true)}> Request a call back </button>
+          <button className="callback-btnn" onClick={() => setShowAppointment(true)}> Request a call back </button>
         </div>
       </div>
 
       <div className="chartered-section">
-        <h1>Manikanta Teja & Associates <br /> A Chartered Accountants Firm in Vizianagaram</h1>
+        <h1>Zoom Taxes <br /> A Chartered Accountants Firm in Thagarapuvalasa</h1>
         <p>
-          Manikanta Teja & Associates is one of the leading Chartered Accountants Firm in Vizianagaram. The firm has strived with the mission to provide a comprehensive range of financial and consulting services to its clients. We offer services like accounts outsourcing, auditing, company formation in India, Business taxation, corporate compliance, starting business in India, registration of foreign companies, transfer pricing, tax due diligence, taxation of expatriates etc.
+          Zoom Taxes is one of the leading Chartered Accountants Thagarapuvalasa. The firm has strived with the mission to provide a comprehensive range of financial and consulting services to its clients. We offer services like accounts outsourcing, auditing, company formation in India, Business taxation, corporate compliance, starting business in India, registration of foreign companies, transfer pricing, tax due diligence, taxation of expatriates etc.
         </p>
       </div><br /><br /><br />
 

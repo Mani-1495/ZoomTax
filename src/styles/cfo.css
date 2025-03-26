@@ -1,96 +1,156 @@
 .cfo-container {
-    font-family: Arial, sans-serif;
-  }
-  
-  .cfo-header {
-    position: relative;
-    width: 100%;
-    height: 550px;
-    overflow: hidden;
-  }
-  
-  .cfo-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .cfo-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fb;
+}
+
+.cfo-header {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.cfo-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+.cfo-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.cfo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.left-section {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.left-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #023c6c;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.right-section {
+  flex: 2;
+  min-width: 300px;
+}
+
+.cfo-card {
+  background: linear-gradient(145deg, #ffffff, #eef4f8);
+  color: #023c6c;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid #dce6f2;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+}
+
+.cfo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-symbol {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #027a48;
+}
+
+.cfo-card.active .card-header {
+  color: #045c98;
+}
+
+.cfo-card.active .card-content {
+  background-color: #ffffff;
+  color: #333;
+  padding: 15px 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
   .cfo-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    flex-direction: column;
+    padding: 40px 30px;
   }
-  
-  .left-section {
-    width: 30%;
-    margin-right: 130px;
-  }
-  
-  .left-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #023c6c;
-  }
-  
-  .left-section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
+
+  .left-section,
   .right-section {
-    width: 70%;
+    width: 100%;
+    max-width: 100%;
   }
-  
-  .cfo-card {
-    background-color: #023c6c;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    gap: 50px;
+
+  .cfo-title {
+    font-size: 2.2rem;
+    padding: 15px 30px;
   }
-  
-  .cfo-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+  .cfo-header {
+    height: 350px;
   }
-  
+
+  .cfo-title {
+    font-size: 1.8rem;
+    padding: 12px 20px;
+  }
+
+  .left-section h2 {
+    font-size: 1.6rem;
+  }
+
   .card-header {
-    display: flex;
-    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+
+  .toggle-symbol {
     font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
   }
-  
-  .card-header .toggle-symbol {
-    font-size: 2rem;
+
+  .cfo-card {
+    padding: 16px;
   }
-  
-  .cfo-card.active .card-header {
-    color: #00ff10;
-  }
-  
-  .cfo-card.active .card-content {
-    background-color: #ebebeb;
-    color: black;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  
+}

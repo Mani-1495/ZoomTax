@@ -1,4 +1,3 @@
-/* Overlay Styling */
 .appointment-overlay {
     position: fixed;
     top: 0;
@@ -13,7 +12,7 @@
     z-index: 1000;
 }
 
-/* Appointment Card Styling */
+
 .appointment-card {
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -44,7 +43,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Form Fields */
+
 .appointment-card form input,
 .appointment-card form textarea {
     width: calc(100% - 20px);
@@ -100,7 +99,7 @@
     transform: scale(1.1);
 }
 
-.close-btn {
+.close-btn1 {
     margin-top: 10px;
     background: rgba(255, 0, 0, 0.8);
     color: white;
@@ -114,8 +113,59 @@
     box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.4);
 }
 
-.close-btn:hover {
+.close-btn1:hover {
     background: rgba(139, 0, 0, 0.9);
     box-shadow: 0px 6px 12px rgba(255, 0, 0, 0.6);
     transform: scale(1.1);
 }
+
+
+@media (max-width: 768px) {
+    .appointment-card {
+      width: 60%;
+      padding: 20px 15px;
+    }
+  
+    .appointment-card h2 {
+      font-size: 22px;
+    }
+  
+    .appointment-card form input,
+    .appointment-card form textarea {
+      font-size: 14px;
+    }
+  
+    .appointment-card form button {
+      width: 70%;
+      font-size: 15px;
+    }
+  
+    .close-btn1 {
+      width: 40%;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .appointment-card {
+      width: 65%;
+      padding: 15px 10px;
+    }
+  
+    .appointment-card h2 {
+      font-size: 20px;
+    }
+  
+    .appointment-card form input,
+    .appointment-card form textarea {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .appointment-card form button,
+    .close-btn1 {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+  
