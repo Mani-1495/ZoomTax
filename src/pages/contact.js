@@ -2,13 +2,12 @@ import React from "react";
 import "../styles/contact.css";
 import Footer from "./Footer";
 import WhatsApp from "../pages/whatsapp";
-
+// added all the needed things
 const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-header">
-        <img
-          src="/images/cs.jpg"
+        <img src="/images/cs.jpg"
           alt="Contact Us"
           className="contact-bg"
           loading="lazy"
