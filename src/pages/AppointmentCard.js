@@ -23,6 +23,9 @@ const AppointmentCard = ({ onClose }) => {
   return (
     <div className="appointment-overlay">
       <div className="appointment-card">
+      <button className="close-btn1" onClick={onClose}>
+          ✖ 
+        </button>
         <h2>Book Appointment</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
@@ -31,9 +34,7 @@ const AppointmentCard = ({ onClose }) => {
           <textarea name="message" placeholder="Your Message (Optional)" value={formData.message} onChange={handleChange} />
           <button type="submit">Submit</button>
         </form>
-        <button className="close-btn1" onClick={onClose}>
-          ✖ Close
-        </button>
+        
       </div>
     </div>
   );

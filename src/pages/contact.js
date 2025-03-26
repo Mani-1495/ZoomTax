@@ -24,7 +24,7 @@ const Contact = () => {
             <img src="/images/map_logo.png" alt="Office" className="icon" />
             <div>
               <h3 className="contact-subheading">Office</h3>
-              <p>#14-7-17/1 Kolagatlavari Street, Opposite to SNR Function Hall,<br /> Thagarapuvalasa, 531162</p>
+              <p>#3-55-17, santapetta tagarapuvalsa,<br /> Thagarapuvalasa, 531162</p>
             </div>
           </div>
 
@@ -48,7 +48,7 @@ const Contact = () => {
             <img src="/images/mail_logo.png" alt="Email" className="icon" />
             <div>
               <h3 className="contact-subheading">Email Information</h3>
-              <p>chvapps7@gmail.com</p>
+              <p>zoomtaxinfo@gmail.com</p>
             </div>
           </div>
         </div>

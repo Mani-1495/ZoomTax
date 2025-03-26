@@ -23,8 +23,8 @@ const Footer = () => {
             <FaPhoneAlt className="footer-icon" /> +91 7093698955
           </p>
           <p className="footer-contact">
-            <FaMapMarkerAlt className="footer-icon" /> #14-7-17/1 Kolagatlavari Street,<br />
-            Opp. SNR Function Hall, Thagarapuvalasa, 531162
+            <FaMapMarkerAlt className="footer-icon" /> #3-55-17, santapetta tagarapuvalsa<br />
+             531162
           </p>
         </div>
 

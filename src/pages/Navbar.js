@@ -21,7 +21,7 @@ const Navbar = ({ setShowAppointment }) => {
             <img src="/images/mail_logo.png" alt="Mail" />
             <div>
               <h3>Email Address</h3>
-              <p>chvapps7@gmail.com</p>
+              <p>zoomtaxinfo@gmail.com</p>
             </div>
           </div>
           <div className="contact-item">

@@ -22,7 +22,7 @@ const About = ({ setShowAppointment }) => {
         </h3>
         <div className="design-element"></div>
         <p className="firm-description">
-          Manikanta Teja & Associates is one of the leading audit firms based
+          ZoomTax Associates is one of the leading audit firms based
           out of Vizianagaram, India. We strongly believe that expert services
           can be provided only by a person who specializes in a niche area of
           service and obtains in-depth knowledge in such a given area over a
@@ -36,7 +36,7 @@ const About = ({ setShowAppointment }) => {
         <div className="query-text">
           <h2>Have Any Question?</h2>
           <h2>We Can Help You..</h2>
-          <p className="query-email">ChvApps7@gmail.com</p>
+          <p className="query-email">zoomtaxinfo@gmail.com</p>
         </div>
         <button className="callback-btnn" onClick={() => setShowAppointment(true)}> 
           Request a call back 
